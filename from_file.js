@@ -1,6 +1,11 @@
-let jsdom = require('jsdom').JSDOM;
+let jsdom = require('jsdom').JSDOM,
+uri = 'public/index.html',
+options = {
+    runScripts: 'dangerously'
+};
 
-jsdom.fromFile('public/index.html').then(function (dom) {
+// load from an external file
+jsdom.fromFile(uri, options).then(function (dom) {
 
     let window = dom.window,
     document = window.document;
