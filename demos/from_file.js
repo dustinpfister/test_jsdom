@@ -1,5 +1,9 @@
 let jsdom = require('jsdom').JSDOM,
+
+// the file I will be loading
 uri = 'public/index.html',
+
+// the options that I will be giving to jsdom
 options = {
     runScripts: 'dangerously',
     resources: "usable"
