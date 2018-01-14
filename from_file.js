@@ -1,7 +1,8 @@
 let jsdom = require('jsdom').JSDOM,
 uri = 'public/index.html',
 options = {
-    runScripts: 'dangerously'
+    runScripts: 'dangerously',
+    resources: "usable"
 };
 
 // load from an external file
